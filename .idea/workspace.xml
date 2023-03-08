@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dd142311-ca4f-4382-8016-b04791c6c974" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/DataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/delivery/test/DataGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/delivery/test/DeliveryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/delivery/test/DeliveryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +83,7 @@
       <recent name="ru.netology.delivery.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DeliveryTest">
+  <component name="RunManager" selected="Gradle.DeliveryTest.shouldSuccessfulPlanAndReplanMeeting">
     <configuration name="DeliveryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -133,8 +132,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.DeliveryTest" />
         <item itemvalue="Gradle.DeliveryTest.shouldSuccessfulPlanAndReplanMeeting" />
+        <item itemvalue="Gradle.DeliveryTest" />
       </list>
     </recent_temporary>
   </component>

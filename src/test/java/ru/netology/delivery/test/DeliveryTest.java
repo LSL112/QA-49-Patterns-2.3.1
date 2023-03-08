@@ -31,7 +31,7 @@ class DeliveryTest {
         // firstMeetingDate и secondMeetingDate. Можно также вызывать методы generateCity(locale),
         // generateName(locale), generatePhone(locale) для генерации и получения в тесте соответственно города,
         // имени и номера телефона без создания пользователя в методе generateUser(String locale) в датагенераторе
-        DataGenerator.UserInfo validUser = DataGenerator.Registration.generateUser("RU");
+        DataGenerator.UserInfo validUser = DataGenerator.Registration.generateUser("ru");
         int daysToAddForFirstMeeting = 4;
         String firstMeetingDate = DataGenerator.generateDate(daysToAddForFirstMeeting);
         int daysToAddForSecondMeeting = 7;
