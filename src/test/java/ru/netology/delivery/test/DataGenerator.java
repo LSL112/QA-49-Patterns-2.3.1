@@ -1,8 +1,7 @@
-package ru.netology.delivery.data;
+package ru.netology.delivery.test;
 
 import com.github.javafaker.Faker;
 import lombok.Value;
-import lombok.val;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -10,20 +9,16 @@ import java.util.Locale;
 import java.util.Random;
 
 public class DataGenerator {
-    private DataGenerator() {
-    }
+    private DataGenerator() {}
 
     public static String generateDate(int shift) {
-        // TODO: добавить логику для объявления переменной date и задания её значения, для генерации строки с датой
-        // Вы можете использовать класс LocalDate и его методы для получения и форматирования даты
         return LocalDate.now().plusDays(shift).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        //return date;
     }
 
     public static String generateCity(String locale) {
         // TODO: добавить логику для объявления переменной city и задания её значения, генерацию можно выполнить
         // с помощью Faker, либо используя массив валидных городов и класс Random
-        var cities = new String[] {"Анадырь", "Барнаул", "Волгоград", "Грозный", "Екатеринбург", "Йошкар-Ола", "Краснодар", "Липецк", "Майкоп", "Нальчик", "Орёл", "Пенза", "Ростов-на-Дону", "Саратов", "Тула", "Уфа", "Чита", "Элиста", "Хабаровск", "Якутск"}
+        var cities = new String[] {"Анадырь", "Барнаул", "Волгоград", "Грозный", "Екатеринбург", "Йошкар-Ола", "Краснодар", "Липецк", "Майкоп", "Нальчик", "Орёл", "Пенза", "Ростов-на-Дону", "Саратов", "Тула", "Уфа", "Чита", "Элиста", "Хабаровск", "Якутск"};
         return cities[new Random().nextInt(cities.length)];
         //return city;
     }
