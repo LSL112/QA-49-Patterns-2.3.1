@@ -41,13 +41,8 @@ class DeliveryTest {
         $x("//span[@data-test-id= 'date']//input").sendKeys(Keys.chord(Keys.SHIFT,Keys.HOME),Keys.DELETE);
         $x("//span[@data-test-id= 'date']//input").setValue(secondMeetingDate);
         $x("//span[contains(text(),  'Запланировать')]").click();
-        //$("[data-test-id='success-notification'] .notification__content").shouldBe(visible, Duration.ofSeconds(15));
-        $("[data-test-id='replan-notification'] .notification__content")
-                .shouldHave(exactText("У вас уже запланирована встреча на другую дату. Перепланировать?"))
-                .shouldBe(visible);
-        //$x("//div//span[contains(text(), 'Перепланировать')]").click();
-        //$x("//div[@data-test-id='replan-notification']//button").click();
-        $("[data-test-id='replan-notification'] button").click();
+        $x("//div[contains(text(),  'У вас уже запланирована встреча на другую дату. Перепланировать?')]").shouldBe(visible);
+        $x("//div[@data-test-id='replan-notification']//button").click();
         $("[data-test-id='success-notification'] .notification__content")
                 .shouldHave(exactText("Встреча успешно запланирована на " + secondMeetingDate))
                 .shouldBe(visible);
